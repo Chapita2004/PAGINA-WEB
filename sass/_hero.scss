@@ -1,0 +1,35 @@
+.hero {
+height: 60vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: $color-blanco;
+text-align: center;
+padding: 20px;
+
+h1 {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@include responsive($breakpoint-tablet) {
+    h1 {
+    font-size: 2rem;
+    }
+}
+}
+
+// Animación de entrada
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}

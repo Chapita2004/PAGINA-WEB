@@ -1,0 +1,43 @@
+header {
+background-color: $color-primario;
+box-shadow: $sombra-card;
+position: sticky;
+top: 0;
+z-index: 100;
+
+.navbar {
+    @include contenedor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+    .logo {
+font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-secundario;
+    }
+
+    .nav-links {
+    display: flex;
+    gap: 20px;
+
+    a {
+        font-size: 1rem;
+        padding: 8px 12px;
+        border-radius: 8px;
+        transition: 0.3s ease;
+
+        &:hover {
+        background-color: $color-secundario;
+        color: $color-blanco;
+        }
+    }
+
+    @include responsive($breakpoint-tablet) {
+        flex-direction: column;
+        gap: 10px;
+    }
+    }
+}
+}

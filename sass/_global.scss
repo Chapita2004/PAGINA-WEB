@@ -1,0 +1,24 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: $fuente-base;
+}
+
+body {
+background-color: $color-primario;
+color: $color-secundario;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+// Clase base reutilizable
+%card {
+background-color: $color-blanco;
+border-radius: 12px;
+box-shadow: $sombra-card;
+padding: 15px;
+}

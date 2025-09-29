@@ -1,0 +1,27 @@
+// Botones dinámicos
+@mixin boton($bg, $color) {
+background-color: $bg;
+color: $color;
+padding: 10px 15px;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s ease;
+
+&:hover {
+    background-color: darken($bg, 10%);
+}
+}
+
+// Contenedor general
+@mixin contenedor($max-width: 1200px) {
+max-width: $max-width;
+margin: auto;
+padding: 0 20px;
+}
+
+// Media query
+@mixin responsive($breakpoint) {
+@media (max-width: $breakpoint) {
+    @content;
+}
+}
