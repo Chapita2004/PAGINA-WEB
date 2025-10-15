@@ -1,7 +1,9 @@
-@use 'variables';
-@use 'mixins';
-@use 'global';
-@use 'navbar';
-@use 'hero';
-@use 'productos';
-@use 'footer';
+@use 'scss/variables';
+@use 'scss/mixins';
+@use 'scss/global';
+@use 'scss/navbar';
+@use 'scss/hero';
+@use 'scss/productos';
+@use 'scss/footer';
+@use 'scss/about';
+@use 'scss/soporte';
