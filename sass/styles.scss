@@ -1,9 +1,11 @@
-@use 'variables' as *;
-@use 'mixins' as *;
-@use 'global';
-@use 'navbar';
-@use 'hero';
-@use 'productos';
-@use 'footer';
-@use 'about';
-@use 'soporte';
+@use 'scss/variables' as *;  // Variables sin prefijo
+@use 'scss/mixins' as *;     // Mixins sin prefijo
+
+// Importaciones de estilos
+@use 'scss/global';
+@use 'scss/navbar';
+@use 'scss/hero';
+@use 'scss/productos';
+@use 'scss/footer';
+@use 'scss/about';
+@use 'scss/soporte';
