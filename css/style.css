@@ -1,17 +1,114 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 8 | @use 'about';
- *   | ^^^^^^^^^^^^
- *   '
- *   scss\main.scss 8:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 8 \2502  @use 'about';\d\a   \2502  ^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 8:1  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff0f7;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f6b3e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover {
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 80vh;
+  background: linear-gradient(135deg, #f6b3e0, #fff0f7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin-top: 0.5rem;
+}
+.hero button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.hero button:hover {
+  background-color: #f6b3e0;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.productos {
+  padding: 2rem;
+  text-align: center;
+}
+.productos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.productos .grid .producto {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.productos .grid .producto:hover {
+  transform: translateY(-5px);
+}
+.productos .grid .producto img {
+  width: 100%;
+  border-radius: 12px;
+}
+.productos .grid .producto p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.productos .grid .producto span {
+  color: #f6b3e0;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #f6b3e0;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.footer p {
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */
