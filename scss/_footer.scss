@@ -1,0 +1,13 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+background-color: $color-principal;
+text-align: center;
+padding: 1rem;
+box-shadow: $sombra;
+
+p {
+    color: $color-texto;
+}
+}

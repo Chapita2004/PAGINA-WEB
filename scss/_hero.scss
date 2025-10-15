@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+@include flex-center;
+flex-direction: column;
+text-align: center;
+height: 80vh;
+background: linear-gradient(135deg, $color-principal, $color-secundario);
+box-shadow: $sombra;
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: $color-texto;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    &:hover {
+    background-color: $color-principal;
+    color: $color-texto;
+    transform: scale(1.05);
+    }
+}
+}
