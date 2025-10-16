@@ -110,5 +110,66 @@ body {
 .footer p {
   color: #333;
 }
+/* ======== SECCIÓN SOPORTE ======== */
+.soporte-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe6f0, #fff8fc);
+  padding: 20px;
+}
+
+.soporte-container {
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.soporte-container img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.soporte-container h1 {
+  font-size: 2rem;
+  color: #ff69b4;
+  margin-bottom: 15px;
+}
+
+.soporte-container p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.btn-volver {
+  display: inline-block;
+  background: #ff69b4;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #e7589f;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 600px) {
+  .soporte-container {
+    padding: 20px;
+  }
+
+  .soporte-container h1 {
+    font-size: 1.6rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
